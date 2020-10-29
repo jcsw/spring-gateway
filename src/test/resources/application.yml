@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: get
+          uri: http://localhost:8090
+          predicates:
+            - Path=/get
